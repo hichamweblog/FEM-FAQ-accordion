@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --display: 3.5rem;
+  --title: 1.12rem;
+  --body: 1rem;
+  --White: hsl(0, 0%, 100%);
+  --Light--pink: hsl(275, 100%, 97%);
+  --Grayish--purple: hsl(292, 16%, 49%);
+  --Dark--purple: hsl(292, 42%, 14%);
+  @media (max-width: 768px) {
+    --display:2rem;
+    --title: 1rem;
+    --body: 0.875rem;
+  }
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: var(--body);
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--Light--pink, hsl(275, 100%, 97%));
+
+}
+.top-bg{
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 20rem;
+}
+
+
+.accordion{
+position: absolute;
+width: 100%;
+max-width: 37.5rem;
+top: 10rem;
+left: 50%;
+transform: translateX(-50%);
+background: var(--White, #FFF);
+padding: 2.5rem;
+box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.10);
+border-radius: 0.5rem;
+z-index: 999;
+}
+.heading{
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.heading h1{
+  font-size: var(--display);
+  color: var(--Dark--purple);
+}
+.accordion-heading{
+  font-size: var(--title);
+  font-weight: 600;
+  color: var(--Dark-Purple, #301534);
+  transition: color 0.3s ease-in;
+}
+.accordion-heading:hover{
+  color: var(--Pink, #AD28EB);
+}
+.accordion-summary{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  }
+
+.accordion-summary::-webkit-details-marker {
+  display: none;
+}
+.accordion-button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.accordion-content{
+  font-size: var(--body);
+  color: var(--Pale-Purple, #8B6990);
+  margin-bottom: 1.5rem;
+}
+.accordion-item{
+  border-bottom: 0.0625rem solid var(--Light-Pink, #F8EEFF);
+  margin-bottom: 1.5rem;
+
+}
+.accordion-item:last-child{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+@media(max-width: 768px){
+  .top-bg{
+      min-height: 14.5rem;
+      }
+  .accordion{
+    top: 8.9rem;
+    padding: 1.5rem;
+    width: 90%;
+  }
+}
