@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			content.setAttribute('hidden', '');
 		});
 
+
 		// If the clicked details was not previously open, open it and set its button to the minus image
 		if (!wasOpen) {
 			parentDetails.setAttribute('open', '');

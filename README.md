@@ -26,7 +26,7 @@ This project is a simple FAQ accordion that allows users to expand and collapse 
 
 ### Links
 
-- Solution URL: [FEM-FAQ-accordion](https://www.frontendmentor.io/solutions/faq-accordion-with-html-css-and-javascript-OR7C7eNcD)
+- Solution URL: [FEM-FAQ-accordion](https://www.frontendmentor.io/solutions/accessible-faqaccordion-htmlcssjs-N2tEMir52u)
 - Live Site URL: [FEM-FAQ-accordion](https://dz-faq-accordion.netlify.app/)
 
 ### Built with
